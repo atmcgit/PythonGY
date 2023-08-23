@@ -21,9 +21,19 @@ print("a"+"-b")
 
 #STRING METODLARI - LEN
 
-mat = "geleceği_yazanalar"
+gel_yaz = "geleceği_yazanlar"
 
 a = 9
 b = 10
 a*b
-print(len(mat))
+print(len(gel_yaz))
+
+#STRING METODLARI - upper() & lower()
+B = gel_yaz.upper()
+K = gel_yaz.lower()
+print(B)
+print(K)
+print(B.islower())
+print(B.isupper())
+print(K.isupper())
+print(K.islower())
