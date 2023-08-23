@@ -68,3 +68,4 @@ gel_yaz = "gelecegi_yazanlar"
 
 gel_yaz[0]
 print(gel_yaz[3:8])
+print(gel_yaz[9:17])
