@@ -69,3 +69,24 @@ gel_yaz = "gelecegi_yazanlar"
 gel_yaz[0]
 print(gel_yaz[3:8])
 print(gel_yaz[9:17])
+
+#TYPE DONUSUMLERI
+
+toplama_bir = input()
+toplama_iki = input()
+
+print(type(toplama_bir))
+print(toplama_bir + toplama_iki)
+
+print(int(toplama_bir)+int(toplama_iki))
+
+print(int(11.0))
+
+print(float(12))
+
+type(str(12))
+
+#print()
+
+print("HELLO AI ERA")
+print("gelecegi","yazanlar",sep="_")
