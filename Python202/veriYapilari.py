@@ -36,3 +36,23 @@ liste2[2]
 
 liste2[0:2]
 liste2[2][4] #50
+
+#Listeler - Eleman Değiştirme
+
+liste3 = ["ali","veli","berkcan","ayse"]
+
+liste3[1] = "velinin-babasi"
+
+liste3[0:3]= "alinin_babasi","velinin_babasi","berkcanin_babasi"
+print(liste3)
+
+liste3 = ["ali","veli","berkcan","ayse"]
+liste3 + ["kemal"]
+print(liste3)
+liste3 = liste3 + ["kemal"]
+liste3.append("kemal")
+print(liste3)
+del liste3[4]
+liste3.remove("kemal")
+liste3.pop(2)
+print(liste3)
