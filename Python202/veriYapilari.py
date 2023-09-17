@@ -1,13 +1,13 @@
-#VERI YAPILARI
+# VERI YAPILARI
 
-#Listeler
+# Listeler
 
-#[]
-#list()
+# []
+# list()
 
-notlar = [70,85,90,60]
-liste = ["a",19.3,90]
-list_genis = ["a",19.3,90, notlar]
+notlar = [70, 85, 90, 60]
+liste = ["a", 19.3, 90]
+list_genis = ["a", 19.3, 90, notlar]
 
 print(len(list_genis))
 
@@ -15,38 +15,38 @@ print(type(notlar))
 
 print(type(list_genis[2]))
 
-tum_liste = [liste,list_genis]
- #del tum_liste
+tum_liste = [liste, list_genis]
+# del tum_liste
 
 
-#Listeler - Eleman Islemleri
+# Listeler - Eleman Islemleri
 
-liste1=[10,20,30,40,50]
+liste1 = [10, 20, 30, 40, 50]
 liste1[0]
 liste1[1]
-#liste1[6]
+# liste1[6]
 
-liste1[0:2] #0dan 2 ye kadar  
-liste1[:2] #0dan 2 ye kadar
+liste1[0:2]  # 0dan 2 ye kadar
+liste1[:2]  # 0dan 2 ye kadar
 
-liste1[2:] #2den sona kadar
+liste1[2:]  # 2den sona kadar
 
-liste2=["a",10,[10,20,30,40,50]]
+liste2 = ["a", 10, [10, 20, 30, 40, 50]]
 liste2[2]
 
 liste2[0:2]
-liste2[2][4] #50
+liste2[2][4]  # 50
 
-#Listeler - Eleman Değiştirme
+# Listeler - Eleman Değiştirme
 
-liste3 = ["ali","veli","berkcan","ayse"]
+liste3 = ["ali", "veli", "berkcan", "ayse"]
 
 liste3[1] = "velinin-babasi"
 
-liste3[0:3]= "alinin_babasi","velinin_babasi","berkcanin_babasi"
+liste3[0:3] = "alinin_babasi", "velinin_babasi", "berkcanin_babasi"
 print(liste3)
 
-liste3 = ["ali","veli","berkcan","ayse"]
+liste3 = ["ali", "veli", "berkcan", "ayse"]
 liste3 + ["kemal"]
 print(liste3)
 liste3 = liste3 + ["kemal"]
@@ -56,3 +56,53 @@ del liste3[4]
 liste3.remove("kemal")
 liste3.pop(2)
 print(liste3)
+
+# insert - ekleme
+
+print(liste3)
+liste3.insert(0, "fatma")
+print(liste3)
+liste3[0] = "mustafa"
+print(liste3)
+liste3.insert(4, "mehmet")
+print(liste3)
+liste3.insert(len(liste3), "merve")
+print(liste3),
+
+
+# pop - silme
+
+liste3.pop(0)
+print(liste3)
+# count - saydırma
+
+liste3 = ["ali", "veli", "isik", "ali", "veli"]
+liste3.count("veli")
+print(liste3.count("ali"))
+
+#copy kopya
+list_yedek = liste3.copy()
+
+print(list_yedek)
+
+#extend birleştir
+
+liste3.extend(["a","b",10])
+print(liste3)
+
+#index() index bilgisini verir
+
+print(liste3.index("ali"))
+
+#reverse() tersten yazdırma
+
+liste3.reverse()
+print(liste3)
+
+#sort() sıralama
+
+liste = [10,50,40,90]
+liste.sort()
+print(liste)
+liste.sort(reverse=True)
+print(liste)
