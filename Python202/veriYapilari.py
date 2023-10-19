@@ -144,3 +144,37 @@ sozluk = {"REG": ["RMSE", 10],
           "CART": ["SSE", 30]}
 
 print(sozluk)
+# Sozluk eleman islemleri
+
+# sozluk[0] #hata verir
+print(sozluk["REG"])
+sozluk["LOJ"]
+#iç içe geçmiş sözlük yapıları
+
+sozluk = {"REG": {"RMSE": 10, "MSE": 20, "SSE": 30},
+          "LOJ": {"RMSE": 10, "MSE": 20, "SSE": 30},
+          "CART": {"RMSE": 10, "MSE": 20, "SSE": 30}}
+
+print(sozluk["REG"])
+
+#sözlük elaman ekleme & değiştirme
+#ekleme
+sozluk["GBM"]="Gradient Boosting Mac"
+
+print(sozluk)
+
+#değiştirme
+sozluk["REG"] = "Coklu Dogrusal Regresyon"
+
+print(sozluk["REG"])
+
+sozluk[1] = "Yapay Sinir Agları"
+
+l=[1]
+# sozluk[l]="yeni bir sey" sözlüklerdeki key değerleri sabit veri yapılarıyla oluşturulabilir.
+t = ("tuple",)
+sozluk[t] = "yeni bir sey"
+
+print(sozluk)
+
+
