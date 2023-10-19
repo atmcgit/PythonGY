@@ -80,29 +80,67 @@ liste3 = ["ali", "veli", "isik", "ali", "veli"]
 liste3.count("veli")
 print(liste3.count("ali"))
 
-#copy kopya
+# copy kopya
 list_yedek = liste3.copy()
 
 print(list_yedek)
 
-#extend birleştir
+# extend birleştir
 
-liste3.extend(["a","b",10])
+liste3.extend(["a", "b", 10])
 print(liste3)
 
-#index() index bilgisini verir
+# index() index bilgisini verir
 
 print(liste3.index("ali"))
 
-#reverse() tersten yazdırma
+# reverse() tersten yazdırma
 
 liste3.reverse()
 print(liste3)
 
-#sort() sıralama
+# sort() sıralama
 
-liste = [10,50,40,90]
+liste = [10, 50, 40, 90]
 liste.sort()
 print(liste)
 liste.sort(reverse=True)
 print(liste)
+
+# Veri Yapıları - Tuple
+# kapsayıcı,sıralı,değiştirilemez
+t = ("ali", "veli,", 1, 2, 3.2, [1, 2, 3, 4])
+t = "ali", "veli", 1, 2, 3.2, [1, 2, 3, 4]
+
+# tuple()
+
+t = ("eleman",)  # virgül olmazsa tuple olmaz #####
+print(type(t))
+t = "ali", "veli", 1, 2, 3.2, [1, 2, 3, 4]
+t[1]
+print(t[0:3])
+
+# t[2] = 99  #hata verir tuple elemanları değiştirilemez
+
+# Veri yapıları - Dictionary (sözlük)
+
+# kapsayıcı,değiştirilebilir,sırasız
+# listelerdeki gibi indexleme işlemleri yapılamaz
+# key-value
+sozluk = {"REG": "Regresyon Modeli",
+          "LOJ": "Lojistik Regresyon",
+          "CART": "Classification and Reg"}
+
+print(sozluk)
+
+print(len(sozluk))
+
+sozluk = {"REG": 10,
+          "LOJ": 20,
+          "CART": 30}
+
+sozluk = {"REG": ["RMSE", 10],
+          "LOJ": ["MSE", 20],
+          "CART": ["SSE", 30]}
+
+print(sozluk)
